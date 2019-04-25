@@ -7,12 +7,14 @@ import { BasicComponent } from './dataGrids/basic/basic.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomCellRenderingComponent } from './dataGrids/custom-cell-rendering/custom-cell-rendering.component';
+import { CustomSortingComponent } from './dataGrids/custom-sorting/custom-sorting.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicComponent,
-    CustomCellRenderingComponent
+    CustomCellRenderingComponent,
+    CustomSortingComponent
   ],
   imports: [
     BrowserModule,
