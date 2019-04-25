@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BasicComponent } from './dataGrids/basic/basic.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomCellRenderingComponent } from './dataGrids/custom-cell-rendering/custom-cell-rendering.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicComponent
+    BasicComponent,
+    CustomCellRenderingComponent
   ],
   imports: [
     BrowserModule,
