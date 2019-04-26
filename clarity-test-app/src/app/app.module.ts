@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomCellRenderingComponent } from './dataGrids/custom-cell-rendering/custom-cell-rendering.component';
 import { CustomSortingComponent } from './dataGrids/custom-sorting/custom-sorting.component';
 import { CustomFilteringComponent } from './dataGrids/custom-filtering/custom-filtering.component';
+import { PaginationComponent } from './dataGrids/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CustomFilteringComponent } from './dataGrids/custom-filtering/custom-fi
     BasicComponent,
     CustomCellRenderingComponent,
     CustomSortingComponent,
-    CustomFilteringComponent
+    CustomFilteringComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
