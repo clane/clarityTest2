@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'clarity-test-app';
+  version = '8.0.0-beta.0';
 }
