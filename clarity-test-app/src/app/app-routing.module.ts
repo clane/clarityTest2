@@ -5,6 +5,7 @@ import { CustomCellRenderingComponent } from './dataGrids/custom-cell-rendering/
 import { CustomSortingComponent } from './dataGrids/custom-sorting/custom-sorting.component';
 import { CustomFilteringComponent } from './dataGrids/custom-filtering/custom-filtering.component';
 import { PaginationComponent } from './dataGrids/pagination/pagination.component';
+import { SelectionComponent } from './dataGrids/selection/selection.component';
 
 
 CustomFilteringComponent 
@@ -15,6 +16,7 @@ const routes: Routes = [
 { path: 'datagrid-custom-sorting', component: CustomSortingComponent },
 { path: 'datagrid-custom-filtering', component: CustomFilteringComponent },
 { path: 'datagrid-pagination', component: PaginationComponent },
+{ path: 'datagrid-selection', component: SelectionComponent },
 ];
 
 @NgModule({

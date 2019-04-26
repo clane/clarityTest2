@@ -10,6 +10,8 @@ import { CustomCellRenderingComponent } from './dataGrids/custom-cell-rendering/
 import { CustomSortingComponent } from './dataGrids/custom-sorting/custom-sorting.component';
 import { CustomFilteringComponent } from './dataGrids/custom-filtering/custom-filtering.component';
 import { PaginationComponent } from './dataGrids/pagination/pagination.component';
+import { UsersComponent } from './dataGrids/users/users.component';
+import { SelectionComponent } from './dataGrids/selection/selection.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PaginationComponent } from './dataGrids/pagination/pagination.component
     CustomCellRenderingComponent,
     CustomSortingComponent,
     CustomFilteringComponent,
-    PaginationComponent
+    PaginationComponent,
+    UsersComponent,
+    SelectionComponent
   ],
   imports: [
     BrowserModule,
