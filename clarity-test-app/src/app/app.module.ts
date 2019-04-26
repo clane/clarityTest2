@@ -12,6 +12,7 @@ import { CustomFilteringComponent } from './dataGrids/custom-filtering/custom-fi
 import { PaginationComponent } from './dataGrids/pagination/pagination.component';
 import { UsersComponent } from './dataGrids/users/users.component';
 import { SelectionComponent } from './dataGrids/selection/selection.component';
+import { SingleSelectionComponent } from './dataGrids/single-selection/single-selection.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SelectionComponent } from './dataGrids/selection/selection.component';
     CustomFilteringComponent,
     PaginationComponent,
     UsersComponent,
-    SelectionComponent
+    SelectionComponent,
+    SingleSelectionComponent
   ],
   imports: [
     BrowserModule,
