@@ -13,6 +13,7 @@ import { PaginationComponent } from './dataGrids/pagination/pagination.component
 import { UsersComponent } from './dataGrids/users/users.component';
 import { SelectionComponent } from './dataGrids/selection/selection.component';
 import { SingleSelectionComponent } from './dataGrids/single-selection/single-selection.component';
+import { BatchActionComponent } from './dataGrids/batch-action/batch-action.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SingleSelectionComponent } from './dataGrids/single-selection/single-se
     PaginationComponent,
     UsersComponent,
     SelectionComponent,
-    SingleSelectionComponent
+    SingleSelectionComponent,
+    BatchActionComponent
   ],
   imports: [
     BrowserModule,

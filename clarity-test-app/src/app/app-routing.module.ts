@@ -7,6 +7,7 @@ import { CustomFilteringComponent } from './dataGrids/custom-filtering/custom-fi
 import { PaginationComponent } from './dataGrids/pagination/pagination.component';
 import { SelectionComponent } from './dataGrids/selection/selection.component';
 import { SingleSelectionComponent } from './dataGrids/single-selection/single-selection.component';
+import { BatchActionComponent } from './dataGrids/batch-action/batch-action.component';
 
 
 CustomFilteringComponent 
@@ -19,6 +20,7 @@ const routes: Routes = [
 { path: 'datagrid-pagination', component: PaginationComponent },
 { path: 'datagrid-selection', component: SelectionComponent },
 { path: 'datagrid-single-selection', component: SingleSelectionComponent },
+{ path: 'datagrid-batch-action', component: BatchActionComponent },
 ];
 
 @NgModule({
