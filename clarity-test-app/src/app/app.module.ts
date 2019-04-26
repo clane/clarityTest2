@@ -8,13 +8,15 @@ import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomCellRenderingComponent } from './dataGrids/custom-cell-rendering/custom-cell-rendering.component';
 import { CustomSortingComponent } from './dataGrids/custom-sorting/custom-sorting.component';
+import { CustomFilteringComponent } from './dataGrids/custom-filtering/custom-filtering.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicComponent,
     CustomCellRenderingComponent,
-    CustomSortingComponent
+    CustomSortingComponent,
+    CustomFilteringComponent
   ],
   imports: [
     BrowserModule,
