@@ -15,6 +15,7 @@ import { SelectionComponent } from './dataGrids/selection/selection.component';
 import { SingleSelectionComponent } from './dataGrids/single-selection/single-selection.component';
 import { BatchActionComponent } from './dataGrids/batch-action/batch-action.component';
 import { SingleActionComponent } from './dataGrids/single-action/single-action.component';
+import { PlaceholderComponent } from './dataGrids/placeholder/placeholder.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SingleActionComponent } from './dataGrids/single-action/single-action.c
     SelectionComponent,
     SingleSelectionComponent,
     BatchActionComponent,
-    SingleActionComponent
+    SingleActionComponent,
+    PlaceholderComponent
   ],
   imports: [
     BrowserModule,
