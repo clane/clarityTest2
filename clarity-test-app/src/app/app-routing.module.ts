@@ -13,6 +13,7 @@ const routes: Routes = [
 { path: 'datagrid-basic', component: BasicComponent },
 { path: 'datagrid-custom-cell-rendering', component: CustomCellRenderingComponent },
 { path: 'datagrid-custom-sorting', component: CustomSortingComponent },
+{ path: 'datagrid-custom-filtering', component: CustomFilteringComponent },
 { path: 'datagrid-pagination', component: PaginationComponent },
 ];
 
