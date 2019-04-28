@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class RoutingSignalService {
 
   constructor() { }
+
+	onRoute = new EventEmitter<any>();
+
 }
