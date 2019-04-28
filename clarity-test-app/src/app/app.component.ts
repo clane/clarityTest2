@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RoutingSignalService } from './routing-signal.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'clarity-test-app';
-  version = '8.0.0-beta.0';
+
+    constructor(private routingSignalService: RoutingSignalService) {}
+    title = 'clarity-test-app';
+    version = '8.0.0-beta.0';
+
 }
