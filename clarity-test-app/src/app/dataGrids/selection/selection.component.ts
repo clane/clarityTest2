@@ -1,5 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
+
+export interface User {
+  id: number;
+  name: string;
+  creation: Date;
+  color: string;
+
+  // Type for dynamic access to specific properties
+  [key: string]: any;
+}
+
+
 @Component({
   selector: 'app-selection',
   templateUrl: './selection.component.html',
@@ -12,9 +24,9 @@ export class SelectionComponent implements OnInit {
   selected: User[] = [];
 
   users = [
-        {id:"1", name:"Kevin", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"blue", pokemon:{"name":"Kabuto","number":1}},
-        {id:"2", name:"Jet", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"red", pokemon:{"name":"Muk","number":2}},
-        {id:"3", name:"Fred", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"green", pokemon:{"name":"Tentacool","number":3}},
+        {id:"1", name:"Kevin", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"blue"},
+        {id:"2", name:"Jet", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"red",},
+        {id:"3", name:"Fred", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"green",},
     ];
 
 
