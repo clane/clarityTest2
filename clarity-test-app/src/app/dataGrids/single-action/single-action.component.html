@@ -3,26 +3,30 @@
 
 
 <h2>Single Action</h2>
-<div class="card card-block">
-    <p class="card-text username-list">
-        User to be edited:
-        <em *ngIf="!toEdit">No user selected.</em>
-        <span class="username" *ngIf="toEdit">{{toEdit.name}}</span>
-    </p>
 
-    <p class="card-text username-list">
-        User to be deleted:
-        <em *ngIf="!toDelete">No user selected.</em>
-        <span class="username" *ngIf="singleToDelete">{{singleToDelete.name}}</span>
-    </p>
+<div class="doNotTest">
+        <p>Do not test this section, this is not part of the Clarity Data Grid. The Clarity Data grid is only part of the user experience and developers should ensure that all interactions that include a Clarity Data Grid are accessible from end to end.</p>
+
+	<div class="card card-block">
+	    <p class="card-text username-list">
+		User to be edited:
+		<span class="username" *ngIf="toEdit">{{toEdit.name}}</span>
+	    </p>
+
+	    <p class="card-text username-list">
+		User to be deleted:
+		<span class="username" *ngIf="singleToDelete">{{singleToDelete.name}}</span>
+	    </p>
+	</div>
+
 </div>
+
 
 <clr-datagrid>
 
     <clr-dg-column>User ID</clr-dg-column>
     <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
     <clr-dg-column [clrDgField]="'creation'">Creation date</clr-dg-column>
-    <clr-dg-column [clrDgField]="'pokemon.name'" [clrDgSortBy]="pokemonComparator">Pokemon</clr-dg-column>
     <clr-dg-column [clrDgField]="'color'">
         Favorite color
     <clr-dg-filter [clrDgFilter]="myFilter">
@@ -40,7 +44,6 @@
         <clr-dg-cell>{{user.id}}</clr-dg-cell>
         <clr-dg-cell>{{user.name}}</clr-dg-cell>
         <clr-dg-cell>{{user.creation | date}}</clr-dg-cell>
-        <clr-dg-cell>{{user.pokemon.name}}</clr-dg-cell>
         <clr-dg-cell>
             {{user.color}} 
         </clr-dg-cell>
