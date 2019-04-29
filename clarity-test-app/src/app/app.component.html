@@ -2,7 +2,9 @@
 
 
 <div id="content">
-<div><a href="#skipTarget">Skip to main content</a></div>
+
+<p><a #skipLink href="#skipTarget" (click)="skip()">Skip to main content</a></p>
+
   <h1>
      Clarity - Version {{version}} Testing 
   </h1>
@@ -38,7 +40,10 @@
 </nav>
 
 
-<div><a id="#skipTarget">main content</a></div>
+<p tabindex="-1" id="skipTarget"#skipTarget>main content</p>
+
+
+
 <router-outlet></router-outlet>
 
 </div>
