@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 export interface User {
   id: Number;
@@ -15,7 +16,15 @@ export interface User {
 })
 export class BatchActionComponent implements OnInit {
 
-  constructor() {}
+  constructor(private titleService: Title) { }
+  componentTitle = 'Data Grid - Batch Action';
+  setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
+  @ViewChild('componentHeading') elementToFocusOnInit;
+
+  ngOnInit() {
+    this.setTitle(this.componentTitle);
+    this.elementToFocusOnInit.nativeElement.focus();
+  }
 
    toAdd: User[] = [];
    toDelete: User[] = [];
@@ -30,8 +39,7 @@ export class BatchActionComponent implements OnInit {
     ];
 
 
-  ngOnInit() {
-  }
+ 
 
     cleanUp(): void {
         this.toAdd = [];
