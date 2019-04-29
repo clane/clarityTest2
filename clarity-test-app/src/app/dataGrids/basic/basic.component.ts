@@ -16,7 +16,6 @@ export class BasicComponent implements OnInit {
   ngOnInit() {
     this.setTitle(this.componentTitle);
     this.elementToFocusOnInit.nativeElement.focus();
-    console.log('test');
   }
 
   users = [
