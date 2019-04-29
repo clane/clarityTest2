@@ -1,5 +1,3 @@
-
-
 <h2 tabindex="-1" #componentHeading>{{componentTitle}}</h2>
 
 <clr-datagrid [(clrDgSelected)]="selected">
@@ -8,9 +6,9 @@
     <clr-dg-column [clrDgField]="'creation'">Creation date</clr-dg-column>
     <clr-dg-column [clrDgField]="'color'">
         Favorite color
-    <clr-dg-filter [clrDgFilter]="myFilter">
-        <h1>custom filter goes here</h1> 
-    </clr-dg-filter>
+        <clr-dg-filter [clrDgFilter]="myFilter">
+            <h1>custom filter goes here</h1>
+        </clr-dg-filter>
     </clr-dg-column>
 
     <clr-dg-row *clrDgItems="let user of users" [clrDgItem]="user">
@@ -25,4 +23,13 @@
     <clr-dg-footer>{{users.length}} users</clr-dg-footer>
 
 </clr-datagrid>
-Selected users: <span *ngFor="let user of selected"> {{user.name}}</span>
+
+<div class="doNotTest">
+    <p>
+        <span class="bold">Testing Notes:&nbsp;</span>
+        <span>
+            Do Not Test this section. Developers using Clarity should ensure that any HTML implementations used with this feature are accessible.
+        </span>
+    </p>
+    Selected users: <span *ngFor="let user of selected"> {{user.name}}</span>
+</div>

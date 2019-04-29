@@ -27,6 +27,14 @@
 
    <clr-dg-footer>{{users.length}} users</clr-dg-footer>
 </clr-datagrid>
-<div>
-Selected user: <span class="username" *ngIf="selectedUser">{{selectedUser.name}}</span>
-</div>
+
+
+<div class="doNotTest">
+        <p>
+            <span class="bold">Testing Notes:&nbsp;</span>
+            <span>
+                Do Not Test this section. Developers using Clarity should ensure that any HTML implementations used with this feature are accessible.
+            </span>
+        </p>
+        Selected user: <span class="username" *ngIf="selectedUser">{{selectedUser.name}}</span>
+    </div>
