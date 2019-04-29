@@ -8,7 +8,6 @@ export interface User {
   color: String;
 }
 
- 
 @Component({
   selector: 'app-batch-action',
   templateUrl: './batch-action.component.html',
@@ -39,8 +38,6 @@ export class BatchActionComponent implements OnInit {
     ];
 
 
- 
-
     cleanUp(): void {
         this.toAdd = [];
         this.toDelete = [];
@@ -50,22 +47,27 @@ export class BatchActionComponent implements OnInit {
 
     onAdd() {
         this.cleanUp();
+        this.toAdd = this.selected.slice();
     }
 
     onEdit() {
         this.cleanUp();
+        this.toEdit = this.selected[0];
     }
 
     onDelete() {
         this.cleanUp();
+        this.toDelete = this.selected.slice();
     }
 
     onExportAll() {
         this.cleanUp();
+        this.toExport = this.users.slice();
     }
 
     onExportSelected() {
         this.cleanUp();
+        this.toExport = this.selected.slice();
 
     }
 
