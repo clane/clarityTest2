@@ -13,8 +13,8 @@ import { PlaceholderComponent } from './dataGrids/placeholder/placeholder.compon
 import { ExpandableRowsComponent } from './dataGrids/expandable-rows/expandable-rows.component';
 import { CompactComponent } from './dataGrids/compact/compact.component';
 import { HideShowComponent } from './dataGrids/hide-show/hide-show.component';
+import { FullDemoComponent } from './dataGrids/full-demo/full-demo.component';
 
-CustomFilteringComponent 
 
 const routes: Routes = [
 { path: 'datagrid-basic', component: BasicComponent },
@@ -30,6 +30,7 @@ const routes: Routes = [
 { path: 'datagrid-expandable-rows', component: ExpandableRowsComponent },
 { path: 'datagrid-compact', component: CompactComponent },
 { path: 'datagrid-hide-show', component: HideShowComponent },
+{ path: 'datagrid-full-demo', component: FullDemoComponent },
 
 ];
 
