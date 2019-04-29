@@ -1,3 +1,35 @@
-<p>
-  hide-show works!
-</p>
+<h2 tabindex="-1" #componentHeading>{{componentTitle}}</h2>
+
+<clr-datagrid>
+    <clr-dg-column>
+        <ng-container *clrDgHideableColumn="{hidden: false}">
+            Creation date
+        </ng-container>
+    </clr-dg-column>
+
+    <clr-dg-column>
+        <ng-container *clrDgHideableColumn="{hidden: false}">
+            Favorite color
+        </ng-container>
+    </clr-dg-column>
+
+    <clr-dg-row *ngFor="let user of users">
+        <clr-dg-cell>{{user.id}}</clr-dg-cell>
+        <clr-dg-cell>{{user.name}}</clr-dg-cell>
+        <clr-dg-cell>{{user.creation | date}}</clr-dg-cell>
+        <clr-dg-cell>{{user.color}}</clr-dg-cell>
+    </clr-dg-row>
+
+
+    <clr-dg-footer>
+        <!-- Optional customization of hide/show columns toggle -->
+        <clr-dg-column-toggle></clr-dg-column-toggle>
+        {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+        of {{pagination.totalItems}} users
+        <clr-dg-pagination #pagination [clrDgPageSize]="currentPageSize"></clr-dg-pagination>
+    </clr-dg-footer>
+
+
+</clr-datagrid>
+
+
