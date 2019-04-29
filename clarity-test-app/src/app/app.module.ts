@@ -18,6 +18,7 @@ import { SingleActionComponent } from './dataGrids/single-action/single-action.c
 import { PlaceholderComponent } from './dataGrids/placeholder/placeholder.component';
 import { ExpandableRowsComponent } from './dataGrids/expandable-rows/expandable-rows.component';
 import { CompactComponent } from './dataGrids/compact/compact.component';
+import { HideShowComponent } from './dataGrids/hide-show/hide-show.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CompactComponent } from './dataGrids/compact/compact.component';
     SingleActionComponent,
     PlaceholderComponent,
     ExpandableRowsComponent,
-    CompactComponent
+    CompactComponent,
+    HideShowComponent
   ],
   imports: [
     BrowserModule,
