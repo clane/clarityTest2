@@ -19,7 +19,7 @@ import { PlaceholderComponent } from './dataGrids/placeholder/placeholder.compon
 import { ExpandableRowsComponent } from './dataGrids/expandable-rows/expandable-rows.component';
 import { CompactComponent } from './dataGrids/compact/compact.component';
 import { HideShowComponent } from './dataGrids/hide-show/hide-show.component';
-import { FullDemoComponent } from './dataGrids/full-demo/full-demo.component';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { FullDemoComponent } from './dataGrids/full-demo/full-demo.component';
     ExpandableRowsComponent,
     CompactComponent,
     HideShowComponent,
-    FullDemoComponent
+  
   ],
   imports: [
     BrowserModule,
