@@ -16,6 +16,7 @@ import { SingleSelectionComponent } from './dataGrids/single-selection/single-se
 import { BatchActionComponent } from './dataGrids/batch-action/batch-action.component';
 import { SingleActionComponent } from './dataGrids/single-action/single-action.component';
 import { PlaceholderComponent } from './dataGrids/placeholder/placeholder.component';
+import { ExpandableRowsComponent } from './dataGrids/expandable-rows/expandable-rows.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PlaceholderComponent } from './dataGrids/placeholder/placeholder.compon
     SingleSelectionComponent,
     BatchActionComponent,
     SingleActionComponent,
-    PlaceholderComponent
+    PlaceholderComponent,
+    ExpandableRowsComponent
   ],
   imports: [
     BrowserModule,
