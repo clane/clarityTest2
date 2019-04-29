@@ -17,6 +17,7 @@ import { BatchActionComponent } from './dataGrids/batch-action/batch-action.comp
 import { SingleActionComponent } from './dataGrids/single-action/single-action.component';
 import { PlaceholderComponent } from './dataGrids/placeholder/placeholder.component';
 import { ExpandableRowsComponent } from './dataGrids/expandable-rows/expandable-rows.component';
+import { CompactComponent } from './dataGrids/compact/compact.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ExpandableRowsComponent } from './dataGrids/expandable-rows/expandable-
     BatchActionComponent,
     SingleActionComponent,
     PlaceholderComponent,
-    ExpandableRowsComponent
+    ExpandableRowsComponent,
+    CompactComponent
   ],
   imports: [
     BrowserModule,
