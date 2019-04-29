@@ -24,7 +24,10 @@ const routes: Routes = [
 { path: 'datagrid-single-selection', component: SingleSelectionComponent },
 { path: 'datagrid-batch-action', component: BatchActionComponent },
 { path: 'datagrid-single-action', component: SingleActionComponent },
+{ path: 'datagrid-placeholder', component: PlaceholderComponent },
 { path: 'datagrid-expandable-rows', component: ExpandableRowsComponent },
+
+
 ];
 
 @NgModule({
