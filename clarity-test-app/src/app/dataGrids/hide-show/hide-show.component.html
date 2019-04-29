@@ -1,6 +1,20 @@
 <h2 tabindex="-1" #componentHeading>{{componentTitle}}</h2>
 
 <clr-datagrid>
+
+    <clr-dg-column>
+        <ng-container *clrDgHideableColumn="{hidden: false}">
+            User ID
+        </ng-container>
+    </clr-dg-column>
+
+    <clr-dg-column>
+        <ng-container *clrDgHideableColumn="{hidden: false}">
+            Name
+        </ng-container>
+    </clr-dg-column>
+
+
     <clr-dg-column>
         <ng-container *clrDgHideableColumn="{hidden: false}">
             Creation date
