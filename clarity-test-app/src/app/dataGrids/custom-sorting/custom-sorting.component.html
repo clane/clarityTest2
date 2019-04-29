@@ -3,6 +3,18 @@
 <h2 tabindex="-1" #componentHeading>{{componentTitle}}</h2>
 
 
+<div class="doNotTest">
+
+<p>
+    <span class="bold">Testing Notes:&nbsp;</span>
+    <span> 
+          Do not test this section, only test the grid control itself. Developers using Clarity must provide accessible controls to sort and provide status updates for all grids.
+          
+    </span>
+
+
+</p>
+
 <p>
     The datagrid is currently <b>{{sortOrder !== 0 ? "" : "not"}}</b> sorted<b>{{sortOrder === 1 ? " ascendingly" : sortOrder
     === -1 ? " descendingly" : ""}}</b>.
@@ -18,6 +30,8 @@
         Clear sort
     </button>
 </p>
+
+</div>
 
 
 <clr-datagrid>
