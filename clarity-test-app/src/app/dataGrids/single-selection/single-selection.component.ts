@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-single-selection',
@@ -7,18 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleSelectionComponent implements OnInit {
 
-  constructor() { }
-
-
- users = [
-        {id:"1", name:"Kevin", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"blue", pokemon:{"name":"Kabuto","number":1}},
-        {id:"2", name:"Jet", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"red", pokemon:{"name":"Muk","number":2}},
-        {id:"3", name:"Fred", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"green", pokemon:{"name":"Tentacool","number":3}},
-    ];
-
-
+  constructor(private titleService: Title) { }
+  componentTitle = 'Data Grid - Single Selection';
+  setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
+  @ViewChild('componentHeading') elementToFocusOnInit;
 
   ngOnInit() {
+    this.setTitle(this.componentTitle);
+    this.elementToFocusOnInit.nativeElement.focus();
   }
 
+
+
+
+  users = [
+    { id: "1", name: "Kevin", creation: "Mon Apr 22 10:00:51 PDT 2019", color: "blue", pokemon: { "name": "Kabuto", "number": 1 } },
+    { id: "2", name: "Jet", creation: "Mon Apr 22 10:00:51 PDT 2019", color: "red", pokemon: { "name": "Muk", "number": 2 } },
+    { id: "3", name: "Fred", creation: "Mon Apr 22 10:00:51 PDT 2019", color: "green", pokemon: { "name": "Tentacool", "number": 3 } },
+  ];
 }
