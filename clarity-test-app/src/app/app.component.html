@@ -3,7 +3,7 @@
 
 <div id="content">
 
-<p><a #skipLink href="#testArea" (click)="skip(e)">Skip to main content</a></p>
+<p><a #skipLink  href="#testArea" (click)="skip($event)">Skip to main content</a></p>
 
   <h1>
      Clarity - Version {{version}} Testing 
@@ -57,7 +57,7 @@
 </nav>
 
 
-<h2 tabindex="-1" id="testArea"#skipTarget>Test Area</h2>
+<h2 tabindex="-1" id="testArea" #testArea>Test Area</h2>
 
 
 
