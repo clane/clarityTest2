@@ -3,10 +3,15 @@
   <p><a #skipLink href="#testArea" (click)="skip($event)">Skip to main content</a></p>
 
   <h1>
-    Clarity - Version {{ngVersion}} Testing
+    Clarity - Testing
   </h1>
 
   <h2>Testing Info</h2>
+
+  <p>
+      <span class="bold">Clarity Version:&nbsp;</span>
+      <span>{{clrVersion}}</span>
+  </p>
 
   <p>
       <span class="bold">Angular Version:&nbsp;</span>
@@ -14,7 +19,7 @@
   </p>
 
   <p>
-      <span class="bold">User Agent:&nbsp;</span>
+      <span class="bold">Current User Agent:&nbsp;</span>
       <span>{{userAgent}}</span>
   </p>
 
