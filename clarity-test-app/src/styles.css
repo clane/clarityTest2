@@ -9,3 +9,5 @@
 }
 
 .bold { font-weight: bold; }
+
+.datagrid-host { border:5px solid green; margin:20px auto; }
