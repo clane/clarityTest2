@@ -4,9 +4,7 @@
 
 .doNotTest { border:5px solid red; margin:20px auto; }
 
-h1 { width:70%; }
-h2 { width:40%; }
-h3 { width:30%; }
+
 
 *:focus , [tabindex='-1']:focus{
     outline: 2px solid #d71ef7 !important;
