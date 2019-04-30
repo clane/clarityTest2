@@ -1,6 +1,6 @@
 
 <h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
-<clr-datagrid>
+<clr-datagrid aria-label="test this data grid with a placeholder">
     <clr-dg-placeholder>We couldn't find any users!</clr-dg-placeholder>
     <clr-dg-row *ngFor="let user of users1">
     <!-- using users1 which is undefined so the placeholder shows up -->
