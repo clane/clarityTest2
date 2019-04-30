@@ -1,12 +1,9 @@
-
-
-
 <div id="content">
 
-<p><a #skipLink  href="#testArea" (click)="skip($event)">Skip to main content</a></p>
+  <p><a #skipLink href="#testArea" (click)="skip($event)">Skip to main content</a></p>
 
   <h1>
-     Clarity - Version {{version}} Testing 
+    Clarity - Version {{version}} Testing
   </h1>
 
   <h2>Testing Info</h2>
@@ -17,51 +14,55 @@
     </a>
   </p>
   <p>
-    Only test the grids themselves. Do not test any content or controls that are not inside a <code>&lt;clr-datagrid&gt;</code> element.
-    Areas not to test are outlined in <span style="color:red">RED</span> Areas that are to be tested are outlined in <span style="color:green">GREEN</span>. 
+    Only test the grids themselves. Do not test any content or controls that are not inside a
+    <code>&lt;clr-datagrid&gt;</code> element.
+    Areas not to test are outlined in <span style="color:red">RED</span> Areas that are to be tested are outlined in
+    <span style="color:green">GREEN</span>.
   </p>
 
-<h2>Datagrid Demos to Test</h2>
-<nav>
-<ol>
-  <li><a routerLink="/datagrid-basic" routerLinkActive="active">Data Grid - Basic Structure</a></li>
-  <li><a routerLink="/datagrid-custom-cell-rendering" routerLinkActive="active">Data Grid - Custom Cell Rendering</a></li>
+  <h2>Links to Datagrid Demos to Test</h2>
+  <nav>
+    <ol>
+      <li><a routerLink="/datagrid-basic" routerLinkActive="active">Data Grid - Basic Structure</a></li>
+      <li><a routerLink="/datagrid-custom-cell-rendering" routerLinkActive="active">Data Grid - Custom Cell
+          Rendering</a></li>
 
-  <li><a routerLink="/datagrid-custom-sorting" routerLinkActive="active">Data Grid - Custom Sorting</a></li>
-  <li><a routerLink="/datagrid-custom-filtering" routerLinkActive="active">Data Grid - Custom Filtering</a></li>
+      <li><a routerLink="/datagrid-custom-sorting" routerLinkActive="active">Data Grid - Custom Sorting</a></li>
+      <li><a routerLink="/datagrid-custom-filtering" routerLinkActive="active">Data Grid - Custom Filtering</a></li>
 
-  <li><a routerLink="/datagrid-pagination" routerLinkActive="active">Data Grid - Pagination</a></li>
-  <li><a routerLink="/datagrid-selection" routerLinkActive="active">Data Grid - Selection</a></li>
-  <li><a routerLink="/datagrid-single-selection" routerLinkActive="active">Data Grid - Single Selection</a></li>
-  <li><a routerLink="/datagrid-batch-action" routerLinkActive="active">Data Grid - Batch Action</a></li>
-  <li><a routerLink="/datagrid-single-action" routerLinkActive="active">Data Grid - Single Action</a></li>
+      <li><a routerLink="/datagrid-pagination" routerLinkActive="active">Data Grid - Pagination</a></li>
+      <li><a routerLink="/datagrid-selection" routerLinkActive="active">Data Grid - Selection</a></li>
+      <li><a routerLink="/datagrid-single-selection" routerLinkActive="active">Data Grid - Single Selection</a></li>
+      <li><a routerLink="/datagrid-batch-action" routerLinkActive="active">Data Grid - Batch Action</a></li>
+      <li><a routerLink="/datagrid-single-action" routerLinkActive="active">Data Grid - Single Action</a></li>
 
-  <li><a routerLink="/datagrid-placeholder" routerLinkActive="active">Data Grid - Placeholder</a></li>
-  <li><a routerLink="/datagrid-expandable-rows" routerLinkActive="active">Data Grid - Expandable Rows</a></li>
-  <li><a routerLink="/datagrid-compact" routerLinkActive="active">Data Grid - Compact</a></li>
-  <li><a routerLink="/datagrid-hide-show" routerLinkActive="active">Data Grid - Hide/Show</a></li>
+      <li><a routerLink="/datagrid-placeholder" routerLinkActive="active">Data Grid - Placeholder</a></li>
+      <li><a routerLink="/datagrid-expandable-rows" routerLinkActive="active">Data Grid - Expandable Rows</a></li>
+      <li><a routerLink="/datagrid-compact" routerLinkActive="active">Data Grid - Compact</a></li>
+      <li><a routerLink="/datagrid-hide-show" routerLinkActive="active">Data Grid - Hide/Show</a></li>
 
-</ol>
-</nav>
-
-
-<h2>Datagrid Demos Not to Test</h2>
-<nav>
-<ol>
-  <li>Data Grid - Smart Iterator(no need to test, no UI change)</li>
-  <li>Data Grid - Binding Properties(no need to test, no UI change)</li>
-  <li>Data Grid - String Filtering(no need to test, string filtering is available in the Custom Sorting example)</li>
-  <li>Data Grid - Server Driven(no need to test, no UI change)</li>
- 
-  <li>Data Grid - Full Demo(no need to test, all features a covered in previous examples)</li>
-</ol>
-</nav>
+    </ol>
+  </nav>
 
 
-<h2 tabindex="-1" id="testArea" #testArea>Test Area</h2>
+  <h2>Datagrid Demos Not Included for Testing</h2>
+  <nav>
+    <ol>
+      <li>Data Grid - Smart Iterator(no need to test, no UI change)</li>
+      <li>Data Grid - Binding Properties(no need to test, no UI change)</li>
+      <li>Data Grid - String Filtering(no need to test, string filtering is available in the Custom Sorting example)
+      </li>
+      <li>Data Grid - Server Driven(no need to test, no UI change)</li>
+
+      <li>Data Grid - Full Demo(no need to test, all features a covered in previous examples)</li>
+    </ol>
+  </nav>
+
+
+  <h2 tabindex="-1" id="testArea" #testArea>Test Area</h2>
 
 
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 
 </div>
