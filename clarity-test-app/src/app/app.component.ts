@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,9 @@ import { Component, ViewChild } from '@angular/core';
 export class AppComponent {
   title = 'clarity-test-app';
   version = '8.0.0-beta.0';
-  @ViewChild('skipLink') skipTarget :Element;
+  @ViewChild('skipLink') skipTarget :ElementRef;
 
-  skip(){
+  skip(e){
     console.log('skip');
     this.skipTarget.nativeElement.focus();
   

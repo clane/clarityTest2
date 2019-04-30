@@ -2,9 +2,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 export interface User {
-  id: Number;
+  id: String;
   name: String;
-  creation: Date;
+  creation: String;
   color: String;
 }
 
@@ -63,6 +63,7 @@ export class BatchActionComponent implements OnInit {
     onExportAll() {
         this.cleanUp();
         this.toExport = this.users.slice();
+      
     }
 
     onExportSelected() {
