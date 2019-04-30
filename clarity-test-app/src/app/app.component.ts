@@ -7,8 +7,8 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 })
 export class AppComponent {
   title = 'clarity-test-app';
-  clrVersion = '8.0.0-beta.0';
-  ngVersion = '8.0.0-rc.0';
+  clrVersion = 'v2.0.0-rc.1';
+  ngVersion = '8.0.0-rc.1';
   userAgent = navigator.userAgent;
   @ViewChild('testArea') skipTarget :ElementRef;
 
