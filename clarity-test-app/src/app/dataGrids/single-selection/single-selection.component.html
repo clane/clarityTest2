@@ -1,7 +1,30 @@
 
 
 
-<h2 tabindex="-1" #componentHeading>{{componentTitle}}</h2>
+<h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
+
+<div>
+    <p>
+        <span class="bold">Testing Notes:&nbsp;</span>
+        <span>
+            Activate the radio buttons at the beginning of each row.
+        </span>
+    </p>
+
+</div>
+
+
+<div class="doNotTest">
+    <p>
+        <span class="bold">
+            Do Not Test this section. 
+        </span>
+        <span>
+            Developers using Clarity should ensure that any HTML implementations used to display the selected user is accessible.
+        </span>
+    </p>
+    Selected user: <span class="username" *ngIf="selectedUser">{{selectedUser.name}}</span>
+</div>
 
 <clr-datagrid [(clrDgSingleSelected)]="selectedUser">
     <clr-dg-column>User ID</clr-dg-column>
@@ -29,12 +52,4 @@
 </clr-datagrid>
 
 
-<div class="doNotTest">
-        <p>
-            <span class="bold">Testing Notes:&nbsp;</span>
-            <span>
-                Do Not Test this section. Developers using Clarity should ensure that any HTML implementations used with this feature are accessible.
-            </span>
-        </p>
-        Selected user: <span class="username" *ngIf="selectedUser">{{selectedUser.name}}</span>
-    </div>
+

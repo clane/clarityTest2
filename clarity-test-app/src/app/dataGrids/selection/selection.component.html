@@ -1,4 +1,27 @@
-<h2 tabindex="-1" #componentHeading>{{componentTitle}}</h2>
+<h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
+
+<div>
+    <p>
+        <span class="bold">Testing Notes:&nbsp;</span>
+        <span>
+            Activate the checkboxes at the beginning of each row.
+        </span>
+    </p>
+
+</div>
+
+
+<div class="doNotTest">
+    <p>
+        <span class="bold">
+            Do Not Test this section. 
+        </span>
+        <span>
+            Developers using Clarity should ensure that any HTML implementations used to display the selected users are accessible.
+        </span>
+    </p>
+    Selected users: <span *ngFor="let user of selected"> {{user.name}}</span>
+</div>
 
 <clr-datagrid [(clrDgSelected)]="selected">
     <clr-dg-column>User ID</clr-dg-column>
@@ -24,12 +47,3 @@
 
 </clr-datagrid>
 
-<div class="doNotTest">
-    <p>
-        <span class="bold">Testing Notes:&nbsp;</span>
-        <span>
-            Do Not Test this section. Developers using Clarity should ensure that any HTML implementations used with this feature are accessible.
-        </span>
-    </p>
-    Selected users: <span *ngFor="let user of selected"> {{user.name}}</span>
-</div>
