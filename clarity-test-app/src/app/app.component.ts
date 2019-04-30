@@ -10,8 +10,9 @@ export class AppComponent {
   version = '8.0.0-beta.0';
   @ViewChild('skipLink') skipTarget :ElementRef;
 
-  skip(e){
+  skip(event){
     console.log('skip');
+    event.preventDefault();
     this.skipTarget.nativeElement.focus();
   
   }
