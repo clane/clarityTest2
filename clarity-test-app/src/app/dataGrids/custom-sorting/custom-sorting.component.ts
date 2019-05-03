@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ClrDatagridSortOrder } from '@clr/angular';
 import {ClrDatagridComparatorInterface} from "@clr/angular";
@@ -39,7 +39,8 @@ export class CustomSortingComponent implements OnInit {
   pokemonComparator = new PokemonComparator();
   componentTitle = 'Data Grid - Custom Sorting';
   setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
-  @ViewChild('componentHeading') elementToFocusOnInit;
+  @ViewChild('componentHeading') elementToFocusOnInit:ElementRef;
+  sortOrder:number;
 
   ngOnInit() {
     this.setTitle(this.componentTitle);

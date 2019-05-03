@@ -4,7 +4,7 @@
 <p>
 <span class="bold">Testing Notes:&nbsp;</span>
 <span>
-    Activate the filter icon in the column header of the last row to see the container for the custom filter appear. Developers using Clarity can add any HTML to this filter container. Developers using Clarity should ensure that any HTML implementations used with this feature are accessible.  
+test    Activate the filter icon in the column header of the last row to see the container for the custom filter appear. Developers using Clarity can add any HTML to this filter container. Developers using Clarity should ensure that any HTML implementations used with this feature are accessible.  
 
 </span>
 
@@ -15,10 +15,9 @@
     <clr-dg-column>User ID</clr-dg-column>
     <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
     <clr-dg-column [clrDgField]="'creation'">Creation date</clr-dg-column>
-    <clr-dg-column [clrDgField]="'pokemon.name'" [clrDgSortBy]="pokemonComparator">Pokemon</clr-dg-column>
     <clr-dg-column [clrDgField]="'color'">
 	Favorite color
-    <clr-dg-filter [clrDgFilter]="myFilter">
+    <clr-dg-filter [clrDgFilter]="">
         <h1>custom filter goes here</h1> 
     </clr-dg-filter>
     </clr-dg-column>
@@ -27,7 +26,6 @@
         <clr-dg-cell>{{user.id}}</clr-dg-cell>
         <clr-dg-cell>{{user.name}}</clr-dg-cell>
         <clr-dg-cell>{{user.creation | date}}</clr-dg-cell>
-        <clr-dg-cell>{{user.pokemon.name}}</clr-dg-cell>
         <clr-dg-cell>
             {{user.color}}
         </clr-dg-cell>
