@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -11,7 +11,8 @@ export class HideShowComponent implements OnInit {
   constructor(private titleService: Title) { }
   componentTitle = 'Data Grid - Hide/Show';
   setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
-  @ViewChild('componentHeading') elementToFocusOnInit;
+  @ViewChild('componentHeading') elementToFocusOnInit:ElementRef;
+  currentPageSize:number;
 
   ngOnInit() {
     this.setTitle(this.componentTitle);

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -11,7 +11,8 @@ export class SingleSelectionComponent implements OnInit {
   constructor(private titleService: Title) { }
   componentTitle = 'Data Grid - Single Selection';
   setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
-  @ViewChild('componentHeading') elementToFocusOnInit;
+  @ViewChild('componentHeading') elementToFocusOnInit:ElementRef;
+  selectedUser:string;
 
   ngOnInit() {
     this.setTitle(this.componentTitle);
