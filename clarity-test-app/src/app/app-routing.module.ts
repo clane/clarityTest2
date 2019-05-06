@@ -13,6 +13,7 @@ import { PlaceholderComponent } from './dataGrids/placeholder/placeholder.compon
 import { ExpandableRowsComponent } from './dataGrids/expandable-rows/expandable-rows.component';
 import { CompactComponent } from './dataGrids/compact/compact.component';
 import { HideShowComponent } from './dataGrids/hide-show/hide-show.component';
+import { StandardAlertComponent } from './alerts/standard-alert/standard-alert.component';
 
 
 
@@ -30,6 +31,7 @@ const routes: Routes = [
 { path: 'datagrid-expandable-rows', component: ExpandableRowsComponent },
 { path: 'datagrid-compact', component: CompactComponent },
 { path: 'datagrid-hide-show', component: HideShowComponent },
+{ path: 'standard-alert', component: StandardAlertComponent },
 
 
 ];
