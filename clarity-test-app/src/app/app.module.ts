@@ -20,6 +20,7 @@ import { ExpandableRowsComponent } from './dataGrids/expandable-rows/expandable-
 import { CompactComponent } from './dataGrids/compact/compact.component';
 import { HideShowComponent } from './dataGrids/hide-show/hide-show.component';
 import { StandardAlertComponent } from './alerts/standard-alert/standard-alert.component';
+import { ColumnOrderingComponent } from './grids/column-ordering/column-ordering.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { StandardAlertComponent } from './alerts/standard-alert/standard-alert.c
     CompactComponent,
     HideShowComponent,
     StandardAlertComponent,
+    ColumnOrderingComponent,
   
   ],
   imports: [
