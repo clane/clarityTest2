@@ -15,6 +15,9 @@ import { CompactComponent } from './dataGrids/compact/compact.component';
 import { HideShowComponent } from './dataGrids/hide-show/hide-show.component';
 import { StandardAlertComponent } from './alerts/standard-alert/standard-alert.component';
 import { ColumnOrderingComponent } from './grids/column-ordering/column-ordering.component';
+import { Wizard1Component} from './wizards/wizard1/wizard1.component';
+
+
 
 
 
@@ -34,6 +37,7 @@ const routes: Routes = [
 { path: 'datagrid-hide-show', component: HideShowComponent },
 { path: 'standard-alert', component: StandardAlertComponent },
 { path: 'column-ordering', component: ColumnOrderingComponent },
+{ path: 'wizard1', component: Wizard1Component },
 
 ];
 

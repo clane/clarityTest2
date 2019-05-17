@@ -21,6 +21,7 @@ import { CompactComponent } from './dataGrids/compact/compact.component';
 import { HideShowComponent } from './dataGrids/hide-show/hide-show.component';
 import { StandardAlertComponent } from './alerts/standard-alert/standard-alert.component';
 import { ColumnOrderingComponent } from './grids/column-ordering/column-ordering.component';
+import { Wizard1Component } from './wizards/wizard1/wizard1.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { ColumnOrderingComponent } from './grids/column-ordering/column-ordering
     HideShowComponent,
     StandardAlertComponent,
     ColumnOrderingComponent,
+    Wizard1Component,
   
   ],
   imports: [
