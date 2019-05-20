@@ -18,9 +18,7 @@ export class WizardSkipStepComponent implements OnInit {
   @ViewChild('wizard') wizard: ClrWizard;
   _open: boolean = false;
 
-
   skipStepTwo: boolean = true;
-
 
   toggleStepTwo() {
       this.skipStepTwo = !this.skipStepTwo;
@@ -29,7 +27,6 @@ export class WizardSkipStepComponent implements OnInit {
   open() {
       this._open = !this.open;
   }
-
 
   ngOnInit() {
     this.setTitle(this.componentTitle);
