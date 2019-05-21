@@ -24,7 +24,8 @@ import { ColumnOrderingComponent } from './grids/column-ordering/column-ordering
 import { Wizard1Component } from './wizards/wizard1/wizard1.component';
 import { WizardSkipStepComponent } from './wizards/wizard-skip-step/wizard-skip-step.component';
 import { WizardAsyncFormValidationComponent } from './wizards/wizard-async-form-validation/wizard-async-form-validation.component';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { WizardAsyncCompletionComponent } from './wizards/wizard-async-completion/wizard-async-completion.component'
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms'
     Wizard1Component,
     WizardSkipStepComponent,
     WizardAsyncFormValidationComponent,
+    WizardAsyncCompletionComponent,
   
   ],
   imports: [
