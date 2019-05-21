@@ -17,8 +17,7 @@ import { StandardAlertComponent } from './alerts/standard-alert/standard-alert.c
 import { ColumnOrderingComponent } from './grids/column-ordering/column-ordering.component';
 import { Wizard1Component } from './wizards/wizard1/wizard1.component';
 import { WizardSkipStepComponent } from './wizards/wizard-skip-step/wizard-skip-step.component';
-
-
+import { WizardAsyncFormValidationComponent } from './wizards/wizard-async-form-validation/wizard-async-form-validation.component';
 
 
 
@@ -42,6 +41,7 @@ const routes: Routes = [
 { path: 'column-ordering', component: ColumnOrderingComponent },
 { path: 'wizard1', component: Wizard1Component },
 { path: 'wizard-skip-step', component:  WizardSkipStepComponent },
+{ path: 'wizard-async-form-validation', component:  WizardAsyncFormValidationComponent },
 
 ];
 

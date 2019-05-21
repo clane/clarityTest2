@@ -23,6 +23,7 @@ import { StandardAlertComponent } from './alerts/standard-alert/standard-alert.c
 import { ColumnOrderingComponent } from './grids/column-ordering/column-ordering.component';
 import { Wizard1Component } from './wizards/wizard1/wizard1.component';
 import { WizardSkipStepComponent } from './wizards/wizard-skip-step/wizard-skip-step.component';
+import { WizardAsyncFormValidationComponent } from './wizards/wizard-async-form-validation/wizard-async-form-validation.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { WizardSkipStepComponent } from './wizards/wizard-skip-step/wizard-skip-
     ColumnOrderingComponent,
     Wizard1Component,
     WizardSkipStepComponent,
+    WizardAsyncFormValidationComponent,
   
   ],
   imports: [
