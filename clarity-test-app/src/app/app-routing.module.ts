@@ -19,7 +19,7 @@ import { Wizard1Component } from './wizards/wizard1/wizard1.component';
 import { WizardSkipStepComponent } from './wizards/wizard-skip-step/wizard-skip-step.component';
 import { WizardAsyncFormValidationComponent } from './wizards/wizard-async-form-validation/wizard-async-form-validation.component';
 import { WizardAsyncCompletionComponent } from './wizards/wizard-async-completion/wizard-async-completion.component';
-
+import { DatePickerComponent } from './datePicker/date-picker/date-picker.component';
 
 
 
@@ -44,6 +44,7 @@ const routes: Routes = [
 { path: 'wizard-skip-step', component:  WizardSkipStepComponent },
 { path: 'wizard-async-form-validation', component:  WizardAsyncFormValidationComponent },
 { path: 'wizard-async-completion', component:  WizardAsyncCompletionComponent },
+{ path: 'date-picker', component: DatePickerComponent },
 
 ];
 
