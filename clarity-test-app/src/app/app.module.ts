@@ -27,7 +27,8 @@ import { WizardAsyncFormValidationComponent } from './wizards/wizard-async-form-
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { WizardAsyncCompletionComponent } from './wizards/wizard-async-completion/wizard-async-completion.component';
 import { DatePickerComponent } from './datePicker/date-picker/date-picker.component';
-import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-basic.component'
+import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-basic.component';
+import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-view-checkbox.component'
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-ba
     WizardAsyncCompletionComponent,
     DatePickerComponent,
     TreeViewBasicComponent,
+    TreeViewCheckboxComponent,
   
   ],
   imports: [

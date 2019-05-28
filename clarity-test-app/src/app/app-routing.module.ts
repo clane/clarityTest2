@@ -21,7 +21,7 @@ import { WizardAsyncFormValidationComponent } from './wizards/wizard-async-form-
 import { WizardAsyncCompletionComponent } from './wizards/wizard-async-completion/wizard-async-completion.component';
 import { DatePickerComponent } from './datePicker/date-picker/date-picker.component';
 import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-basic.component';
-
+import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-view-checkbox.component';
 
 
 
@@ -47,6 +47,7 @@ const routes: Routes = [
 { path: 'wizard-async-completion', component:  WizardAsyncCompletionComponent },
 { path: 'date-picker', component: DatePickerComponent },
 { path: 'tree-view-basic', component: TreeViewBasicComponent },
+{ path: 'tree-view-checkbox', component: TreeViewCheckboxComponent },
 
 ];
 
