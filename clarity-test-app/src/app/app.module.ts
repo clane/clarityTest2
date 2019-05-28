@@ -26,7 +26,8 @@ import { WizardSkipStepComponent } from './wizards/wizard-skip-step/wizard-skip-
 import { WizardAsyncFormValidationComponent } from './wizards/wizard-async-form-validation/wizard-async-form-validation.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { WizardAsyncCompletionComponent } from './wizards/wizard-async-completion/wizard-async-completion.component';
-import { DatePickerComponent } from './datePicker/date-picker/date-picker.component'
+import { DatePickerComponent } from './datePicker/date-picker/date-picker.component';
+import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-basic.component'
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { DatePickerComponent } from './datePicker/date-picker/date-picker.compon
     WizardAsyncFormValidationComponent,
     WizardAsyncCompletionComponent,
     DatePickerComponent,
+    TreeViewBasicComponent,
   
   ],
   imports: [

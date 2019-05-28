@@ -20,6 +20,7 @@ import { WizardSkipStepComponent } from './wizards/wizard-skip-step/wizard-skip-
 import { WizardAsyncFormValidationComponent } from './wizards/wizard-async-form-validation/wizard-async-form-validation.component';
 import { WizardAsyncCompletionComponent } from './wizards/wizard-async-completion/wizard-async-completion.component';
 import { DatePickerComponent } from './datePicker/date-picker/date-picker.component';
+import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-basic.component';
 
 
 
@@ -45,6 +46,7 @@ const routes: Routes = [
 { path: 'wizard-async-form-validation', component:  WizardAsyncFormValidationComponent },
 { path: 'wizard-async-completion', component:  WizardAsyncCompletionComponent },
 { path: 'date-picker', component: DatePickerComponent },
+{ path: 'tree-view-basic', component: TreeViewBasicComponent },
 
 ];
 

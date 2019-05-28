@@ -17,7 +17,7 @@ export class WizardAsyncCompletionComponent implements OnInit {
   @ViewChild('componentHeading') elementToFocusOnInit:ElementRef;
   @ViewChild("wizard") wizard: ClrWizard;
   @ViewChild("myForm") formData: any;
-  @ViewChild("myFinishPage") finishPage: ClrWizardPage;
+  @ViewChild("myFinishPage") finishPage: any;
 
   loadingFlag: boolean = false;
   errorFlag: boolean = false;
