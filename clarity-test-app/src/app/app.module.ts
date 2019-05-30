@@ -28,7 +28,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { WizardAsyncCompletionComponent } from './wizards/wizard-async-completion/wizard-async-completion.component';
 import { DatePickerComponent } from './datePicker/date-picker/date-picker.component';
 import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-basic.component';
-import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-view-checkbox.component'
+import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-view-checkbox.component';
+import { TreeViewIconsComponent } from './treeViews/tree-view-icons/tree-view-icons.component'
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-v
     DatePickerComponent,
     TreeViewBasicComponent,
     TreeViewCheckboxComponent,
+    TreeViewIconsComponent,
   
   ],
   imports: [
