@@ -13,6 +13,7 @@ export class FormsDemo1Component implements OnInit {
   componentTitle = 'Form Demo 1';
   setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
   @ViewChild('componentHeading') elementToFocusOnInit:ElementRef;
+  model; 
 
   ngOnInit() {
     this.setTitle(this.componentTitle);
