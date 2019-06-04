@@ -23,6 +23,7 @@ import { DatePickerComponent } from './datePicker/date-picker/date-picker.compon
 import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-basic.component';
 import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-view-checkbox.component';
 import { TreeViewIconsComponent } from './treeViews/tree-view-icons/tree-view-icons.component';
+import { FormsDemo1Component } from './forms/forms-demo1/forms-demo1.component';
 
 
 
@@ -50,7 +51,7 @@ const routes: Routes = [
 { path: 'tree-view-basic', component: TreeViewBasicComponent },
 { path: 'tree-view-checkbox', component: TreeViewCheckboxComponent },
 { path: 'tree-view-icons', component: TreeViewIconsComponent },
-
+{ path: 'forms-demo1', component: FormsDemo1Component },
 
 ];
 

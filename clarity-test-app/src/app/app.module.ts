@@ -29,7 +29,8 @@ import { WizardAsyncCompletionComponent } from './wizards/wizard-async-completio
 import { DatePickerComponent } from './datePicker/date-picker/date-picker.component';
 import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-basic.component';
 import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-view-checkbox.component';
-import { TreeViewIconsComponent } from './treeViews/tree-view-icons/tree-view-icons.component'
+import { TreeViewIconsComponent } from './treeViews/tree-view-icons/tree-view-icons.component';
+import { FormsDemo1Component } from './forms/forms-demo1/forms-demo1.component'
 
 
 @NgModule({
@@ -59,6 +60,7 @@ import { TreeViewIconsComponent } from './treeViews/tree-view-icons/tree-view-ic
     TreeViewBasicComponent,
     TreeViewCheckboxComponent,
     TreeViewIconsComponent,
+    FormsDemo1Component,
   
   ],
   imports: [
