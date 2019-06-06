@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-custom-filtering',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomFilteringComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title) { }
+  componentTitle = 'Data Grid - Custom Filtering';
+  setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
+  @ViewChild('componentHeading') elementToFocusOnInit;
+
+  ngOnInit() {
+    this.setTitle(this.componentTitle);
+    this.elementToFocusOnInit.nativeElement.focus();
+  }
 
    users = [
 	{id:"1", name:"Kevin", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"blue", pokemon:{"name":"Kabuto","number":1}},
@@ -29,10 +39,5 @@ export class CustomFilteringComponent implements OnInit {
 	{id:"3", name:"Fred", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"green", pokemon:{"name":"Tentacool","number":3}},
 	{id:"3", name:"Fred", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"green", pokemon:{"name":"Tentacool","number":3}},
     ];
-
-
-
-  ngOnInit() {
-  }
 
 }

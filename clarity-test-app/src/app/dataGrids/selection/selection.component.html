@@ -1,14 +1,34 @@
+<h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
 
-<h2>Selection</h2>
-<clr-datagrid [(clrDgSelected)]="selected">
+<div>
+    <p>
+        <span class="bold">Testing Notes:&nbsp;</span>
+        <span>
+            Activate the checkboxes at the beginning of each row.
+        </span>
+    </p>
+
+</div>
+
+
+<div class="doNotTest">
+    <p>
+        <span class="bold">
+            Do Not Test this section. 
+        </span>
+        <span>
+            Developers using Clarity should ensure that any HTML implementations used to display the selected users are accessible.
+        </span>
+    </p>
+    Selected users: <span *ngFor="let user of selected"> {{user.name}}</span>
+</div>
+
+<clr-datagrid [(clrDgSelected)]="selected" aria-label="test this data grid with selection">
     <clr-dg-column>User ID</clr-dg-column>
     <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
     <clr-dg-column [clrDgField]="'creation'">Creation date</clr-dg-column>
     <clr-dg-column [clrDgField]="'color'">
         Favorite color
-    <clr-dg-filter [clrDgFilter]="myFilter">
-        <h1>custom filter goes here</h1> 
-    </clr-dg-filter>
     </clr-dg-column>
 
     <clr-dg-row *clrDgItems="let user of users" [clrDgItem]="user">
@@ -23,4 +43,4 @@
     <clr-dg-footer>{{users.length}} users</clr-dg-footer>
 
 </clr-datagrid>
-Selected users: <span *ngFor="let user of selected"> {{user.name}}</span>
+

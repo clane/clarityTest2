@@ -1,0 +1,13 @@
+<h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
+
+<clr-tree-node [clrExpanded]="true">
+  Permissions
+  <clr-tree-node
+          *ngFor="let permission of permissions"
+          [(clrExpanded)]="permission.expanded">
+      {{permission.type}}
+      <clr-tree-node *ngFor="let right of permission.rights" [(clrSelected)]="right.enable">
+          {{right.name}}
+      </clr-tree-node>
+  </clr-tree-node>
+</clr-tree-node>

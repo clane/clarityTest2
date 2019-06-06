@@ -1,0 +1,52 @@
+<h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
+
+<p>
+    <span class="bold">Testing Notes:&nbsp;</span>
+    <span>Activate the "View Columns" icon at the bottom left of the grid</span>
+</p>
+
+<clr-datagrid aria-label="test this data grid with the hide/show feature"> 
+
+    <clr-dg-column>
+        <ng-container *clrDgHideableColumn="{hidden: false}">
+            User ID
+        </ng-container>
+    </clr-dg-column>
+
+    <clr-dg-column>
+        <ng-container *clrDgHideableColumn="{hidden: false}">
+            Name
+        </ng-container>
+    </clr-dg-column>
+
+
+    <clr-dg-column>
+        <ng-container *clrDgHideableColumn="{hidden: false}">
+            Creation date
+        </ng-container>
+    </clr-dg-column>
+
+    <clr-dg-column>
+        <ng-container *clrDgHideableColumn="{hidden: false}">
+            Favorite color
+        </ng-container>
+    </clr-dg-column>
+
+    <clr-dg-row *ngFor="let user of users">
+        <clr-dg-cell>{{user.id}}</clr-dg-cell>
+        <clr-dg-cell>{{user.name}}</clr-dg-cell>
+        <clr-dg-cell>{{user.creation | date}}</clr-dg-cell>
+        <clr-dg-cell>{{user.color}}</clr-dg-cell>
+    </clr-dg-row>
+
+
+    <clr-dg-footer>
+        <!-- Optional customization of hide/show columns toggle -->
+        <clr-dg-column-toggle></clr-dg-column-toggle>
+ 
+    </clr-dg-footer>
+
+
+</clr-datagrid>
+
+

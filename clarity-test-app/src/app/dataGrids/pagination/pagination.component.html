@@ -1,22 +1,27 @@
 
-<h2>Pagination</h2>
-<clr-datagrid>
+<h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
+<p>
+    <span class="bold">Testing Notes:&nbsp;</span>
+    <span>
+        Test the pagination controls at the bottom right of the grid. Developers using Clarity are responsible for providing an accessible implementation to inform users of the changes resulting from pagination.
+
+    </span>
+
+</p>
+
+<clr-datagrid aria-label="test this data grid with pagination">
     <clr-dg-column>User ID</clr-dg-column>
     <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
     <clr-dg-column [clrDgField]="'creation'">Creation date</clr-dg-column>
-    <clr-dg-column [clrDgField]="'pokemon.name'" [clrDgSortBy]="pokemonComparator">Pokemon</clr-dg-column>
     <clr-dg-column [clrDgField]="'color'">
         Favorite color
-    <clr-dg-filter [clrDgFilter]="myFilter">
-        <h1>custom filter goes here</h1> 
-    </clr-dg-filter>
+
     </clr-dg-column>
 
     <clr-dg-row *clrDgItems="let user of users">
         <clr-dg-cell>{{user.id}}</clr-dg-cell>
         <clr-dg-cell>{{user.name}}</clr-dg-cell>
         <clr-dg-cell>{{user.creation | date}}</clr-dg-cell>
-        <clr-dg-cell>{{user.pokemon.name}}</clr-dg-cell>
         <clr-dg-cell>
             {{user.color}}
         </clr-dg-cell>

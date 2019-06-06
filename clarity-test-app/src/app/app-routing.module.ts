@@ -10,9 +10,22 @@ import { SingleSelectionComponent } from './dataGrids/single-selection/single-se
 import { BatchActionComponent } from './dataGrids/batch-action/batch-action.component';
 import { SingleActionComponent } from './dataGrids/single-action/single-action.component';
 import { PlaceholderComponent } from './dataGrids/placeholder/placeholder.component';
+import { ExpandableRowsComponent } from './dataGrids/expandable-rows/expandable-rows.component';
+import { CompactComponent } from './dataGrids/compact/compact.component';
+import { HideShowComponent } from './dataGrids/hide-show/hide-show.component';
+import { StandardAlertComponent } from './alerts/standard-alert/standard-alert.component';
+import { ColumnOrderingComponent } from './grids/column-ordering/column-ordering.component';
+import { Wizard1Component } from './wizards/wizard1/wizard1.component';
+import { WizardSkipStepComponent } from './wizards/wizard-skip-step/wizard-skip-step.component';
+import { WizardAsyncFormValidationComponent } from './wizards/wizard-async-form-validation/wizard-async-form-validation.component';
+import { WizardAsyncCompletionComponent } from './wizards/wizard-async-completion/wizard-async-completion.component';
+import { DatePickerComponent } from './datePicker/date-picker/date-picker.component';
+import { TreeViewBasicComponent } from './treeViews/tree-view-basic/tree-view-basic.component';
+import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-view-checkbox.component';
+import { TreeViewIconsComponent } from './treeViews/tree-view-icons/tree-view-icons.component';
+import { FormsDemo1Component } from './forms/forms-demo1/forms-demo1.component';
 
 
-CustomFilteringComponent 
 
 const routes: Routes = [
 { path: 'datagrid-basic', component: BasicComponent },
@@ -25,6 +38,21 @@ const routes: Routes = [
 { path: 'datagrid-batch-action', component: BatchActionComponent },
 { path: 'datagrid-single-action', component: SingleActionComponent },
 { path: 'datagrid-placeholder', component: PlaceholderComponent },
+{ path: 'datagrid-expandable-rows', component: ExpandableRowsComponent },
+{ path: 'datagrid-compact', component: CompactComponent },
+{ path: 'datagrid-hide-show', component: HideShowComponent },
+{ path: 'standard-alert', component: StandardAlertComponent },
+{ path: 'column-ordering', component: ColumnOrderingComponent },
+{ path: 'wizard1', component: Wizard1Component },
+{ path: 'wizard-skip-step', component:  WizardSkipStepComponent },
+{ path: 'wizard-async-form-validation', component:  WizardAsyncFormValidationComponent },
+{ path: 'wizard-async-completion', component:  WizardAsyncCompletionComponent },
+{ path: 'date-picker', component: DatePickerComponent },
+{ path: 'tree-view-basic', component: TreeViewBasicComponent },
+{ path: 'tree-view-checkbox', component: TreeViewCheckboxComponent },
+{ path: 'tree-view-icons', component: TreeViewIconsComponent },
+{ path: 'forms-demo1', component: FormsDemo1Component },
+
 ];
 
 @NgModule({

@@ -2,7 +2,14 @@
 
 #content { width:80%; margin:auto;  } 
 
-.doNotTest { border:5px solid red; } 
+.doNotTest { border:5px solid red; margin:20px auto; }
 
 
 
+*:focus , [tabindex='-1']:focus{
+    outline: 2px solid #d71ef7 !important;
+}
+
+.bold { font-weight: bold; }
+
+.datagrid-host { border:5px solid green; margin:20px auto; }

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
+
 
 
 export interface User {
@@ -19,7 +22,15 @@ export interface User {
 })
 export class SelectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title) { }
+  componentTitle = 'Data Grid - Selection';
+  setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
+  @ViewChild('componentHeading') elementToFocusOnInit;
+
+  ngOnInit() {
+    this.setTitle(this.componentTitle);
+    this.elementToFocusOnInit.nativeElement.focus();
+  }
 
   selected: User[] = [];
 
@@ -28,11 +39,5 @@ export class SelectionComponent implements OnInit {
         {id:"2", name:"Jet", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"red",},
         {id:"3", name:"Fred", creation:"Mon Apr 22 10:00:51 PDT 2019", color:"green",},
     ];
-
-
-
-
-  ngOnInit() {
-  }
 
 }

@@ -1,35 +1,141 @@
-
-
-
 <div id="content">
-<div><a href="#skipTarget">Skip to main content</a></div>
+
+  <p><a #skipLink href="#testArea" (click)="skip($event)">Skip to main content</a></p>
+
   <h1>
-     Clarity - Version {{version}} Testing 
+    Clarity Testing
   </h1>
 
-<p><a href="https://stackblitz.com/github/clane/clarityTest2/tree/master/clarity-test-app">https://stackblitz.com/github/clane/clarityTest2/tree/master/clarity-test-app</a></p>
+  <h2>Testing Information</h2>
 
-<nav>
-<ul>
-  <li><a routerLink="/datagrid-basic" routerLinkActive="active">Data Grid - Basic Structure</a></li>
-  <li><a routerLink="/datagrid-custom-cell-rendering" routerLinkActive="active">Data Grid - Custom Cell Rendering</a></li>
-  <li>Data Grid - Smart Iterator</li>
-  <li>Data Grid - Binding Properties</li>
-  <li><a routerLink="/datagrid-custom-sorting" routerLinkActive="active">Data Grid - Custom Sorting</a></li>
-  <li><a routerLink="/datagrid-custom-filtering" routerLinkActive="active">Data Grid - Custom Filtering</a></li>
-  <li>Data Grid - String Filtering</li>
-  <li><a routerLink="/datagrid-pagination" routerLinkActive="active">Data Grid - Pagination</a></li>
-  <li><a routerLink="/datagrid-selection" routerLinkActive="active">Data Grid - Selection</a></li>
-  <li><a routerLink="/datagrid-single-selection" routerLinkActive="active">Data Grid - Single Selection</a></li>
-  <li><a routerLink="/datagrid-batch-action" routerLinkActive="active">Data Grid - Batch Action</a></li>
-  <li><a routerLink="/datagrid-single-action" routerLinkActive="active">Data Grid - Single Action</a></li>
-  <li>Data Grid - Server Driven</li>
-  <li><a routerLink="/datagrid-placeholder" routerLinkActive="active">Data Grid - Placeholder</a></li>
-</ul>
-</nav>
+  <p>
+      <span class="bold">Clarity Version:&nbsp;</span>
+      <span>{{clrVersion}}</span>
+  </p>
+
+  <p>
+      <span class="bold">Angular Version:&nbsp;</span>
+      <span>{{ngVersion}}</span>
+  </p>
+
+  <p>
+      <span class="bold">Current User Agent:&nbsp;</span>
+      <span>{{userAgent}}</span>
+  </p>
+
+  <p>
+    <span class="bold">Test URL:&nbsp;</span>
+    <a href="https://stackblitz.com/github/clane/clarityTest2/tree/master/clarity-test-app">
+      https://stackblitz.com/github/clane/clarityTest2/tree/master/clarity-test-app
+    </a>
+  </p>
+  <p>
+    Only test the grids themselves. Do not test any content or controls that are not inside a
+    <code>&lt;clr-datagrid&gt;</code> element.
+    Areas not to test are outlined in <span style="color:red">RED</span> Areas that are to be tested are outlined in
+    <span style="color:green">GREEN</span>.
+  </p>
+
+  <p>
+    Please do not report any issues regarding accessible names or descriptions for the grids under test because these should be implemented by the developer using Clarity.
+
+  </p>
+
+  <h2>Links to Datagrid Demos to Test</h2>
+  <nav>
+    <ol>
+      <li><a routerLink="/datagrid-basic" routerLinkActive="active">Data Grid - Basic Structure</a></li>
+      <li><a routerLink="/datagrid-custom-cell-rendering" routerLinkActive="active">Data Grid - Custom Cell
+          Rendering</a></li>
+
+      <li><a routerLink="/datagrid-custom-sorting" routerLinkActive="active">Data Grid - Custom Sorting</a></li>
+      <li><a routerLink="/datagrid-custom-filtering" routerLinkActive="active">Data Grid - Custom Filtering</a></li>
+
+      <li><a routerLink="/datagrid-pagination" routerLinkActive="active">Data Grid - Pagination</a></li>
+      <li><a routerLink="/datagrid-selection" routerLinkActive="active">Data Grid - Selection</a></li>
+      <li><a routerLink="/datagrid-single-selection" routerLinkActive="active">Data Grid - Single Selection</a></li>
+      <li><a routerLink="/datagrid-batch-action" routerLinkActive="active">Data Grid - Batch Action</a></li>
+      <li><a routerLink="/datagrid-single-action" routerLinkActive="active">Data Grid - Single Action</a></li>
+
+      <li><a routerLink="/datagrid-placeholder" routerLinkActive="active">Data Grid - Placeholder</a></li>
+      <li><a routerLink="/datagrid-expandable-rows" routerLinkActive="active">Data Grid - Expandable Rows</a></li>
+      <li><a routerLink="/datagrid-compact" routerLinkActive="active">Data Grid - Compact</a></li>
+      <li><a routerLink="/datagrid-hide-show" routerLinkActive="active">Data Grid - Hide/Show</a></li>
 
 
-<div><a id="#skipTarget">main content</a></div>
-<router-outlet></router-outlet>
+   
+
+    </ol>
+  </nav>
+
+
+  <h2>Datagrid Demos Not Included for Testing</h2>
+  <nav>
+    <ol>
+      <li>Data Grid - Smart Iterator(no need to test, no UI change)</li>
+      <li>Data Grid - Binding Properties(no need to test, no UI change)</li>
+      <li>Data Grid - String Filtering(no need to test, string filtering is available in the Custom Sorting example)
+      </li>
+      <li>Data Grid - Server Driven(no need to test, no UI change)</li>
+
+      <li>Data Grid - Full Demo(no need to test, all features a covered in previous examples)</li>
+    </ol>
+  </nav>
+
+  <h2>Grid Demos</h2>
+  <nav>
+    <ol>
+      <li><a routerLink="/column-ordering" routerLinkActive="active">Grids - Column-Ordering</a></li>
+    </ol>
+  </nav>
+
+  <h2>Alert Demos</h2>
+  <nav>
+    <ol>
+      <li><a routerLink="/standard-alert" routerLinkActive="active">Alerts- Standard Alert</a></li>
+    </ol>
+  </nav>
+
+
+  <h2>Wizard Demos</h2>
+  <nav>
+    <ol>
+      <li><a routerLink="/wizard1" routerLinkActive="active">Wizard1</a></li>
+      <li><a routerLink="/wizard-skip-step" routerLinkActive="active">Wizard with Skipped Step</a></li>
+      <li><a routerLink="/wizard-async-form-validation" routerLinkActive="active">Wizard with Async Form Validation</a></li>
+      <li><a routerLink="/wizard-async-completion" routerLinkActive="active">Wizard with Async Form Completion</a></li>
+    </ol>
+  </nav>
+
+  <h2>Date Picker Demos</h2>
+  <nav>
+    <ol>
+      <li><a routerLink="/date-picker" routerLinkActive="active">Date Picker</a></li>
+    </ol>
+  </nav>
+
+  <h2>Tree View Demos</h2>
+  <nav>
+    <ol>
+      <li><a routerLink="/tree-view-basic" routerLinkActive="active">Tree View - Basic</a></li>
+      <li><a routerLink="/tree-view-icons" routerLinkActive="active">Tree View - Icons</a></li>
+      <li><a routerLink="/tree-view-checkbox" routerLinkActive="active">Tree View - Checkbox</a></li>
+    </ol>
+  </nav>
+
+  <h2>Form Demos</h2>
+  <nav>
+    <ol>
+      <li><a routerLink="/forms-demo1" routerLinkActive="active">Form Demos</a></li>
+    </ol>
+  </nav>
+  
+
+
+  <h2 tabindex="-1" id="testArea" #testArea>Test Area</h2>
+
+
+
+  <router-outlet></router-outlet>
 
 </div>
