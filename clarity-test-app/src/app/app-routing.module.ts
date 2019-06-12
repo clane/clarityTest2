@@ -54,6 +54,7 @@ const routes: Routes = [
 { path: 'tree-view-checkbox', component: TreeViewCheckboxComponent },
 { path: 'tree-view-icons', component: TreeViewIconsComponent },
 { path: 'forms-demo1', component: FormsDemo1Component },
+{ path:'signpost', component: SignpostComponent },
 { path: 'stackview', component: StackviewComponent },
 
 ];
