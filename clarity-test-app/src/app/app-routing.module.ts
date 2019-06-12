@@ -25,6 +25,7 @@ import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-v
 import { TreeViewIconsComponent } from './treeViews/tree-view-icons/tree-view-icons.component';
 import { FormsDemo1Component } from './forms/forms-demo1/forms-demo1.component';
 import {  SignpostComponent} from './signpost/signpost.component';
+import { StackviewComponent } from './stackview/stackview.component';
 
 
 
@@ -53,7 +54,7 @@ const routes: Routes = [
 { path: 'tree-view-checkbox', component: TreeViewCheckboxComponent },
 { path: 'tree-view-icons', component: TreeViewIconsComponent },
 { path: 'forms-demo1', component: FormsDemo1Component },
-{ path: 'signpost', component: SignpostComponent },
+{ path: 'stackview', component: StackviewComponent },
 
 ];
 

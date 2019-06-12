@@ -1,5 +1,10 @@
 <h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
 
-<p>
-  signpost works!
-</p>
+<p>Activate the following button</p>
+<clr-signpost>
+  <clr-signpost-content *clrIfOpen>
+      <h3>Signpost with an important link</h3>
+      <p><a href="#">Important Page</a></p>
+      
+  </clr-signpost-content>
+</clr-signpost>
