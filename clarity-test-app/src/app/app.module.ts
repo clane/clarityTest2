@@ -32,7 +32,8 @@ import { TreeViewCheckboxComponent } from './treeViews/tree-view-checkbox/tree-v
 import { TreeViewIconsComponent } from './treeViews/tree-view-icons/tree-view-icons.component';
 import { FormsDemo1Component } from './forms/forms-demo1/forms-demo1.component';
 import { SignpostComponent } from './signpost/signpost.component';
-import { StackviewComponent } from './stackview/stackview.component'
+import { StackviewComponent } from './stackview/stackview.component';
+import { StackviewEditComponent } from './stackview-edit/stackview-edit.component'
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { StackviewComponent } from './stackview/stackview.component'
     FormsDemo1Component,
     SignpostComponent,
     StackviewComponent,
+    StackviewEditComponent,
   
   ],
   imports: [
