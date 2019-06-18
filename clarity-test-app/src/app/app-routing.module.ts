@@ -28,6 +28,7 @@ import {  SignpostComponent} from './signpost/signpost.component';
 import { StackviewComponent } from './stackview/stackview.component';
 import { StackviewEditComponent } from './stackview-edit/stackview-edit.component';
 import { HeaderComponent } from './header/header.component';
+import { ButtonGroupComponent } from './button-group/button-group.component';
 
 
 
@@ -60,6 +61,7 @@ const routes: Routes = [
 { path: 'stackview', component: StackviewComponent },
 { path: 'stackview-edit', component: StackviewEditComponent },
 { path: 'header', component: HeaderComponent },
+{ path: 'button-group', component: ButtonGroupComponent },
 
 ];
 

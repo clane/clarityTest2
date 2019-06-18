@@ -34,7 +34,8 @@ import { FormsDemo1Component } from './forms/forms-demo1/forms-demo1.component';
 import { SignpostComponent } from './signpost/signpost.component';
 import { StackviewComponent } from './stackview/stackview.component';
 import { StackviewEditComponent } from './stackview-edit/stackview-edit.component';
-import { HeaderComponent } from './header/header.component'
+import { HeaderComponent } from './header/header.component';
+import { ButtonGroupComponent } from './button-group/button-group.component'
 
 
 @NgModule({
@@ -69,6 +70,7 @@ import { HeaderComponent } from './header/header.component'
     StackviewComponent,
     StackviewEditComponent,
     HeaderComponent,
+    ButtonGroupComponent,
   
   ],
   imports: [
