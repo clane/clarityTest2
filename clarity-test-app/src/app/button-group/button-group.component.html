@@ -1,6 +1,160 @@
 
 <h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
 
-<p>
-  button-group works!
-</p>
+<h4>Basic Button Group</h4>
+<div class="btn-group btn-primary">
+  <button class="btn">Add</button>
+  <button class="btn">Edit</button>
+  <button class="btn">Download</button>
+  <button class="btn">Delete</button>
+</div>
+
+<h4>Overflow Button Group</h4>
+
+<div class="btn-group btn-primary">
+  <button class="btn">Add</button>
+  <button class="btn">Edit</button>
+  <div class="btn-group-overflow open">
+      <button class="btn dropdown-toggle">
+          <clr-icon shape="ellipsis-horizontal"></clr-icon>
+      </button>
+      <div class="dropdown-menu">
+          <button class="btn">Download</button>
+          <button class="btn">Delete</button>
+      </div>
+  </div>
+</div>
+
+<h4>Primary Button Group</h4>
+<div class="btn-group btn-primary">
+  <button class="btn">Add</button>
+  <button class="btn">Edit</button>
+  <button class="btn">Download</button>
+  <button class="btn">Delete</button>
+</div>
+
+<h4>Outline Button Group</h4>
+<div class="btn-group">
+  <button class="btn">Add</button>
+  <button class="btn">Edit</button>
+  <button class="btn">Download</button>
+  <button class="btn">Delete</button>
+</div>
+
+<h4>Flat Button Group</h4>
+<div class="btn-group btn-link">
+  <button class="btn">Add</button>
+  <button class="btn">Edit</button>
+  <button class="btn">Download</button>
+  <button class="btn">Delete</button>
+</div>
+
+<h4>Small Button Group</h4>
+<div class="btn-group btn-outline-primary btn-sm">
+  <button class="btn">Add</button>
+  <button class="btn">Edit</button>
+  <button class="btn">Download</button>
+  <button class="btn">Delete</button>
+</div>
+
+<h4>Mixed Button Group</h4>
+<div class="btn-group btn-primary">
+  <button class="btn">Favorite</button>
+  <button class="btn btn-success">Add</button>
+  <button class="btn btn-danger">Delete</button>
+</div>
+
+<h4>Icons Button Group</h4>
+<div class="btn-group btn-primary btn-icon">
+  <button class="btn">
+      <clr-icon shape="home"></clr-icon>
+      <span class="clr-icon-title">Home</span>
+  </button>
+  <button class="btn">
+      <clr-icon shape="cog"></clr-icon>
+      <span class="clr-icon-title">Settings</span>
+  </button>
+  <div class="btn-group-overflow open">
+      <button class="btn dropdown-toggle">
+          <clr-icon shape="ellipsis-horizontal"></clr-icon>
+      </button>
+      <div class="dropdown-menu">
+          <button class="btn">
+              <clr-icon shape="user"></clr-icon>
+              <span class="clr-icon-title">User</span>
+          </button>
+          <button class="btn">
+              <clr-icon shape="cloud"></clr-icon>
+              <span class="clr-icon-title">Cloud</span>
+          </button>
+      </div>
+  </div>
+</div>
+
+<h4>Icons with Text Button Group</h4>
+
+<div class="btn-group btn-primary">
+  <button class="btn">
+      <clr-icon shape="home"></clr-icon>
+      Home
+  </button>
+  <button class="btn">
+      <clr-icon shape="cog"></clr-icon>
+      Settings
+  </button>
+  <div class="btn-group-overflow open">
+      <button class="btn dropdown-toggle">
+          <clr-icon shape="ellipsis-horizontal"></clr-icon>
+      </button>
+      <div class="dropdown-menu">
+          <button class="btn">
+              <clr-icon shape="user"></clr-icon>
+              User
+          </button>
+          <button class="btn">
+              <clr-icon shape="cloud"></clr-icon>
+              Cloud
+          </button>
+      </div>
+  </div>
+</div>
+
+<h4>Checkboxes with Text Button Group</h4>
+<div class="btn-group">
+  <div class="checkbox btn">
+      <input type="checkbox" id="btn-demo-check-1">
+      <label for="btn-demo-check-1">Apples</label>
+  </div>
+  <div class="checkbox btn">
+      <input type="checkbox" id="btn-demo-check-2" checked>
+      <label for="btn-demo-check-2">Oranges</label>
+  </div>
+  <div class="checkbox btn">
+      <input type="checkbox" id="btn-demo-check-3">
+      <label for="btn-demo-check-3">Kiwis</label>
+  </div>
+  <div class="checkbox btn">
+      <input type="checkbox" id="btn-demo-check-4 checked">
+      <label for="btn-demo-check-4">Pears</label>
+  </div>
+</div>
+
+<h4>Radio Buttons with Text Button Group</h4>
+<div class="btn-group">
+  <div class="radio btn">
+      <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-1">
+      <label for="btn-demo-radio-1">Apples</label>
+  </div>
+  <div class="radio btn">
+      <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-2">
+      <label for="btn-demo-radio-2">Oranges</label>
+  </div>
+  <div class="radio btn">
+      <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-3">
+      <label for="btn-demo-radio-3">Kiwis</label>
+  </div>
+  <div class="radio btn">
+      <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-4" checked>
+      <label for="btn-demo-radio-4">Pears</label>
+  </div>
+</div>
