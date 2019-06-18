@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-button-group',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonGroupComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title) { }
+
+  componentTitle = 'Button Group Examples';
+  setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
+  @ViewChild('componentHeading') elementToFocusOnInit:ElementRef;
 
   ngOnInit() {
+    this.setTitle(this.componentTitle);
+    this.elementToFocusOnInit.nativeElement.focus();
   }
 
 }
