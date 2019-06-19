@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 
 
 @Component({
@@ -9,8 +10,27 @@ import { Title } from '@angular/platform-browser';
 })
 export class StepperComponent implements OnInit {
 
-  constructor(private titleService: Title) { }
+  form: FormGroup;
 
+  constructor(private titleService: Title, private formBuilder: FormBuilder) {
+
+    this.form = this.formBuilder.group({
+      name: this.formBuilder.group({
+        first: ['', Validators.required],
+        last: ['', Validators.required],
+      }),
+      contact: this.formBuilder.group({
+        email: [],
+        phone: [],
+      }),
+      password: this.formBuilder.group({
+        password: [],
+        confirm: [],
+      }),
+    });
+
+
+  }
 
   componentTitle = 'Stepper Examples';
   setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }

@@ -3,6 +3,9 @@
 <h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
 
 
-<p>
-  stepper works!
-</p>
+
+<form clrStepper #contactForm="ngForm" (ngSubmit)="templateFormSubmit(contactForm.value)">
+</form>
+
+
+
