@@ -29,6 +29,7 @@ import { StackviewComponent } from './stackview/stackview.component';
 import { StackviewEditComponent } from './stackview-edit/stackview-edit.component';
 import { HeaderComponent } from './header/header.component';
 import { ButtonGroupComponent } from './button-group/button-group.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 
 
@@ -62,6 +63,7 @@ const routes: Routes = [
 { path: 'stackview-edit', component: StackviewEditComponent },
 { path: 'header', component: HeaderComponent },
 { path: 'button-group', component: ButtonGroupComponent },
+{ path: 'stepper', component: StepperComponent },
 
 ];
 
