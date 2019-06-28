@@ -30,8 +30,7 @@ import { StackviewEditComponent } from './stackview-edit/stackview-edit.componen
 import { HeaderComponent } from './header/header.component';
 import { ButtonGroupComponent } from './button-group/button-group.component';
 import { StepperComponent } from './stepper/stepper.component';
-
-
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 const routes: Routes = [
 { path: 'datagrid-basic', component: BasicComponent },
@@ -64,6 +63,7 @@ const routes: Routes = [
 { path: 'header', component: HeaderComponent },
 { path: 'button-group', component: ButtonGroupComponent },
 { path: 'stepper', component: StepperComponent },
+{ path: 'dropdown', component: DropdownComponent },
 
 ];
 

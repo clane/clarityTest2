@@ -32,6 +32,10 @@ export class StepperComponent implements OnInit {
 
   }
 
+  submit() {
+    console.log('reactive form submit', this.form.value);
+  }
+
   componentTitle = 'Stepper Examples';
   setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
   @ViewChild('componentHeading') elementToFocusOnInit:ElementRef;
