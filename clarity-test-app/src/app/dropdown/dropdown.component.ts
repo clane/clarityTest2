@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-dropdown',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DropdownComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title ) {} 
+
+  componentTitle = 'Dropdown Examples';
+  setTitle(newTitle: string) { this.titleService.setTitle(newTitle); }
+  @ViewChild('componentHeading') elementToFocusOnInit:ElementRef;
 
   ngOnInit() {
+    this.setTitle(this.componentTitle);
+    this.elementToFocusOnInit.nativeElement.focus();
   }
-
 }
