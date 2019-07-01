@@ -49,7 +49,7 @@
 </div>
 
 
-<h4>Trying aria-describedby with the header</h4>
+<h4>Trying aria-describedby with the header to fix the issue of the header not being announced by screen readers when you open the menu or read a menu item</h4>
 <div class="clr-example squeeze">
   <clr-dropdown [clrCloseMenuOnItemClick]="false">
       <button type="button" clrDropdownTrigger>
@@ -68,6 +68,8 @@
   </clr-dropdown>
 </div>
 
+<h5>Test Results</h5>
 <ul>
-<li>MacOS  cr</li>
+<li>Windows 10/NVDA 2018.41/Firefox 60.7.2esr - heading is announced as a description when reading menu-items with the arrow keys</li>
+<li>Windows 10/NVDA 2018.41/Chrome 75.0.3770.100 - heading is announced as a description when reading menu-items with the arrow keys</li>
 </ul>
