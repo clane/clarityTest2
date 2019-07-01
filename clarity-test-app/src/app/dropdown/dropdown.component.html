@@ -47,3 +47,23 @@
       </clr-dropdown-menu>
   </clr-dropdown>
 </div>
+
+
+<h4>Trying aria-labelledby with the header</h4>
+<div class="clr-example squeeze">
+  <clr-dropdown [clrCloseMenuOnItemClick]="false">
+      <button type="button" clrDropdownTrigger>
+    
+          Dropdown
+          <clr-icon shape="caret down"></clr-icon>
+      </button>
+      <clr-dropdown-menu *clrIfOpen>
+          <label id="menuHeader1" class="dropdown-header">Dropdown header</label>
+          <button aria-labelledby="menuHeader1" type="button" clrDropdownItem>Action 1</button>
+          <button aria-labelledby="menuHeader1"type="button" clrDropdownItem>Action 2</button>
+          <div class="dropdown-divider"></div>
+          <button  aria-labelledby="menuHeader1" type="button" clrDropdownItem>Link 1</button>
+          <button  aria-labelledby="menuHeader1" type="button" clrDropdownItem>Link 2</button>
+      </clr-dropdown-menu>
+  </clr-dropdown>
+</div>
