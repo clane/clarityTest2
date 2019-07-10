@@ -48,8 +48,7 @@
   </clr-dropdown>
 </div>
 
-<h4>ARIA Menu with headers</h4>
-<p>Trying aria-describedby as method to associate a header with menu items</p>
+<h4>ARIA Menu with headers using aria-label</h4>
 <div class="clr-example squeeze">
   <clr-dropdown [clrCloseMenuOnItemClick]="false">
       <button type="button" clrDropdownTrigger>
@@ -70,4 +69,26 @@
   </clr-dropdown>
 </div>
 
-<h5>Test Results</h5>
+<h4>ARIA Menu with headers using aria-label</h4>
+<div class="clr-example squeeze">
+  <clr-dropdown [clrCloseMenuOnItemClick]="false">
+      <button type="button" clrDropdownTrigger>
+          Dropdown 4
+          <clr-icon shape="caret down"></clr-icon>
+      </button>
+    
+      <clr-dropdown-menu *clrIfOpen>
+          <label aria-hidden="true"  class="dropdown-header">Team 1</label>
+          <button clrDropdownItem><span class="offscreenText">Team 1&nbsp;</span>Jeeyun</button>
+          <button clrDropdownItem><span class="offscreenText">Team 1&nbsp;</span>Lillia</button>
+          <div aria-hidden="true" class="dropdown-divider"></div>
+          <label aria-hidden="true" class="dropdown-header">Team 2</label>
+          <button clrDropdownItem><span class="offscreenText">Team 2&nbsp;</span>Chris</button>
+          <button clrDropdownItem><span class="offscreenText">Team 2&nbsp;</span>Sheri</button>
+      </clr-dropdown-menu>
+  </clr-dropdown>
+</div>
+
+
+<h4>ARIA Menu with headers using hidden text</h4>
+
