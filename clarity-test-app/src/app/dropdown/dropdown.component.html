@@ -48,8 +48,8 @@
   </clr-dropdown>
 </div>
 
-<h4>aria-describedby example</h4>
-<p>Trying aria-describedby with the header to fix the issue of the headernot being announced by screen readers when you open the menu</p>
+<h4>ARIA Menu with headers</h4>
+<p>Trying aria-describedby as method to associate a header with menu items</p>
 <div class="clr-example squeeze">
   <clr-dropdown [clrCloseMenuOnItemClick]="false">
       <button type="button" clrDropdownTrigger>
@@ -57,12 +57,16 @@
           Dropdown 3
           <clr-icon shape="caret down"></clr-icon>
       </button>
-       <label role="none" id="menuHeader1" class="dropdown-header">Team</label>
+       <div id="menuHeader1" class="dropdown-header">Team 1</div>
+       <div id="menuHeader2" class="dropdown-header">Team 2</div>
       <clr-dropdown-menu *clrIfOpen>
-        <label aria-hidden="true" id="menuHeader1" class="dropdown-header">Team</label>
-          <button aria-describedby="menuHeader1" type="button" clrDropdownItem>Jeeyun</button>
-          <button aria-describedby="menuHeader1"type="button" clrDropdownItem>Lillia</button>
-          <div role="seperator" class="dropdown-divider"></div>
+          <label aria-hidden="true" class="dropdown-header">Team 1</label>
+          <button aria-describedby="menuHeader1" clrDropdownItem>Jeeyun</button>
+          <button aria-describedby="menuHeader1" clrDropdownItem>Lillia</button>
+          <div aria-hidden="true" class="dropdown-divider"></div>
+          <label aria-hidden="true" class="dropdown-header">Team 2</label>
+          <button aria-describedby="menuHeader2" clrDropdownItem>Chris</button>
+          <button aria-describedby="menuHeader2" clrDropdownItem>Sheri</button>
 
       </clr-dropdown-menu>
   </clr-dropdown>
