@@ -57,28 +57,15 @@
           Dropdown 3
           <clr-icon shape="caret down"></clr-icon>
       </button>
+       <label role="none" id="menuHeader1" class="dropdown-header">Team</label>
       <clr-dropdown-menu *clrIfOpen>
-          <label id="menuHeader1" class="dropdown-header">Extreme Actions</label>
-          <button aria-describedby="menuHeader1" type="button" clrDropdownItem>Action 1</button>
-          <button aria-describedby="menuHeader1"type="button" clrDropdownItem>Action 2</button>
-          <div class="dropdown-divider"></div>
-          <button  aria-describedby="menuHeader1" type="button" clrDropdownItem>Link 1</button>
-          <button  aria-describedby="menuHeader1" type="button" clrDropdownItem>Link 2</button>
+        <label aria-hidden="true" id="menuHeader1" class="dropdown-header">Team</label>
+          <button aria-describedby="menuHeader1" type="button" clrDropdownItem>Jeeyun</button>
+          <button aria-describedby="menuHeader1"type="button" clrDropdownItem>Lillia</button>
+          <div role="seperator" class="dropdown-divider"></div>
+
       </clr-dropdown-menu>
   </clr-dropdown>
 </div>
 
 <h5>Test Results</h5>
-<ul>
-<li>Windows 10/NVDA 2018.41/Firefox 60.7.2esr - heading is announced as a description when reading menu-items with the arrow keys</li>
-<li>Windows 10/NVDA 2018.41/Chrome 75.0.3770.100 - heading is announced as a description when reading menu-items with the arrow keys</li>
-<li>Windows 10/NVDA 2018.41/IE11 - heading is announced as a description when reading menu-items with the arrow keys</li>
-<li>Windows 10/NVDA 2018.41/Edge - heading is announced as a description when reading menu-items with the arrow keys</li>
-<li>Windows 10/JAWS 2019/Firefox 60.7.2esr  - heading is announced as a description after the accessible name and keyboard usage instructions when reading menu-items with the arrow keys</li>
-<li>Windows 10/JAWS 2019/Chrome 75.0.3770.100 - heading is announced as a description after the accessible name and keyboard usage instructions when reading menu-items with the arrow keys</li>
-<li>Windows 10/JAWS 2019/IE11 - heading is announced as a description after the accessible name and keyboard usage instructions when reading menu-items with the arrow keys</li>
-<li>Windows 10/JAWS 2019/Edge - heading is NOT announced as a description after the accessible name and keyboard usage instructions when . Additionally, it is not possible to read the heading with the virtual cursor</li>
-<li>Mac OS X 10_14_4/VoiceOver/Safari Version 12.1.1 (14607.2.6.1.1) - heading is announced as a description after the accessible name when reading menu-items with the arrow keys</li>
-<li>Mac OS X 10_14_4/VoiceOver/Chrome Version 75.0.3770.100  - heading is announced as a description after the accessible name when reading menu-items with the arrow keys</li>
-
-</ul>
