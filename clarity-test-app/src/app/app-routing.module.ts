@@ -31,6 +31,7 @@ import { HeaderComponent } from './header/header.component';
 import { ButtonGroupComponent } from './button-group/button-group.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 const routes: Routes = [
 { path: 'datagrid-basic', component: BasicComponent },
@@ -64,6 +65,7 @@ const routes: Routes = [
 { path: 'button-group', component: ButtonGroupComponent },
 { path: 'stepper', component: StepperComponent },
 { path: 'dropdown', component: DropdownComponent },
+{ path: 'tooltip', component: TooltipComponent },
 
 ];
 

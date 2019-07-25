@@ -37,7 +37,8 @@ import { StackviewEditComponent } from './stackview-edit/stackview-edit.componen
 import { HeaderComponent } from './header/header.component';
 import { ButtonGroupComponent } from './button-group/button-group.component';
 import { StepperComponent } from './stepper/stepper.component';
-import { DropdownComponent } from './dropdown/dropdown.component'
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { TooltipComponent } from './tooltip/tooltip.component'
 
 
 @NgModule({
@@ -75,6 +76,7 @@ import { DropdownComponent } from './dropdown/dropdown.component'
     ButtonGroupComponent,
     StepperComponent,
     DropdownComponent,
+    TooltipComponent,
   
   ],
   imports: [
