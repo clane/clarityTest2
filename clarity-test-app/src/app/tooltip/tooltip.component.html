@@ -1,3 +1,23 @@
-<p>
-  tooltip works!
-</p>
+
+<h3 tabindex="-1" #componentHeading>{{componentTitle}}</h3>
+
+
+
+<h4>Angular Component</h4>
+<clr-tooltip>
+  <clr-icon clrTooltipTrigger shape="info-circle" size="24"></clr-icon>
+  <clr-tooltip-content clrPosition="top-right" clrSize="xs" *clrIfOpen>
+      <span>Lorem</span>
+  </clr-tooltip-content>
+</clr-tooltip>
+
+
+
+
+<h4>Angular Component with role="tooltip" on the trigger</h4>
+<clr-tooltip clrTooltipTrigger  role="tooltip">
+  <clr-icon  shape="info-circle" size="24"></clr-icon>
+  <clr-tooltip-content clrPosition="top-right" clrSize="xs" *clrIfOpen>
+      <span>Lorem</span>
+  </clr-tooltip-content>
+</clr-tooltip>
